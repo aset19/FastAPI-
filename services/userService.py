@@ -11,6 +11,7 @@ def create_user(data: UserBase  , db:Session):
     # Создаем объект User
     user = User (
         name= data.name,
+        nickname = data.nickname,
         email = data.email,
         hashed_password = data.hashed_password,
     )
